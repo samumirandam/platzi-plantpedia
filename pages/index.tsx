@@ -1,9 +1,15 @@
+import { useEffect } from 'react'
 import { Grid } from '@ui/Grid'
 import { Button } from '@ui/Button'
 import { Typography } from '@ui/Typography'
 import { Layout } from '@components/Layout'
+import { getPlantList } from '@api'
 
 export default function Home() {
+  useEffect(() => {
+    getPlantList({ limit: 10 }).then((data) => console.log(data))
+  }, [])
+
   return (
     <Layout>
       <Typography variant="h2" className="text-center">

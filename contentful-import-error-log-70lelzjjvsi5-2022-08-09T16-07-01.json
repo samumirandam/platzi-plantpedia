@@ -1,0 +1,318 @@
+[
+  {
+    "ts": "2022-08-09T21:07:39.285Z",
+    "level": "error",
+    "error": {
+      "name": "VersionMismatch",
+      "entity": {
+        "metadata": {
+          "tags": [
+          ]
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "t888he5mrnzj"
+            }
+          },
+          "id": "rZ4NunAGSDVFB3r2q1vaR",
+          "type": "Asset",
+          "createdAt": "2021-04-22T23:55:25.865Z",
+          "updatedAt": "2021-04-22T23:56:01.957Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 4,
+          "publishedAt": "2021-04-22T23:56:01.957Z",
+          "firstPublishedAt": "2021-04-22T23:56:01.957Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2MxmI2I4mEjRLL0Q94AkvD"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2MxmI2I4mEjRLL0Q94AkvD"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 5,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2MxmI2I4mEjRLL0Q94AkvD"
+            }
+          }
+        },
+        "fields": {
+          "title": {
+            "en-US": "Photo by Aline Lira from Pexels"
+          },
+          "description": {
+            "en-US": "https://www.pexels.com/photo/green-leafed-plants-in-greenhouse-1757571/"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/t888he5mrnzj/rZ4NunAGSDVFB3r2q1vaR/13e0c7fb691adf556d6ce1c2a4191b82/pexels-aline-lira-1757571.jpg",
+              "details": {
+                "size": 276585,
+                "image": {
+                  "width": 1280,
+                  "height": 851
+                }
+              },
+              "fileName": "pexels-aline-lira-1757571.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/70lelzjjvsi5/environments/master/assets/rZ4NunAGSDVFB3r2q1vaR",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/1.14.29; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v16.13.2; os Windows/v16.13.2;",
+            "CF-Sequence": "dd1326e1-7a3d-4af4-b328-6be1bcc83e4a",
+            "Authorization": "Bearer ...cr_L4",
+            "user-agent": "node.js/v16.13.2",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 1,
+            "Content-Length": 412
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"Photo by Aline Lira from Pexels\"},\"description\":{\"en-US\":\"https://www.pexels.com/photo/green-leafed-plants-in-greenhouse-1757571/\"},\"file\":{\"en-US\":{\"contentType\":\"image/jpeg\",\"fileName\":\"pexels-aline-lira-1757571.jpg\",\"upload\":\"https://images.ctfassets.net/t888he5mrnzj/rZ4NunAGSDVFB3r2q1vaR/13e0c7fb691adf556d6ce1c2a4191b82/pexels-aline-lira-1757571.jpg\"}}}}"
+        },
+        "requestId": "69bd7035-dfc5-45e5-b8a9-beac697ac0bc"
+      }
+    }
+  },
+  {
+    "ts": "2022-08-09T21:07:39.295Z",
+    "level": "error",
+    "error": {
+      "name": "VersionMismatch",
+      "entity": {
+        "metadata": {
+          "tags": [
+          ]
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "t888he5mrnzj"
+            }
+          },
+          "id": "4R8kuXmKQ680Vpgf6UnukR",
+          "type": "Asset",
+          "createdAt": "2021-05-30T14:04:46.964Z",
+          "updatedAt": "2021-05-30T14:05:56.954Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 6,
+          "publishedAt": "2021-05-30T14:05:56.954Z",
+          "firstPublishedAt": "2021-05-30T14:05:56.954Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1YzDOsKSfTqWyBfAbJYP16"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1YzDOsKSfTqWyBfAbJYP16"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 7,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1YzDOsKSfTqWyBfAbJYP16"
+            }
+          }
+        },
+        "fields": {
+          "title": {
+            "en-US": "pexels-edu-carvalho-2050994"
+          },
+          "description": {
+            "en-US": "Photo by Edu Carvalho from Pexels",
+            "es": "Photo by Edu Carvalho from Pexels"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/t888he5mrnzj/4R8kuXmKQ680Vpgf6UnukR/a048b8f53092a73b9df055516734b880/pexels-edu-carvalho-2050994.jpg",
+              "details": {
+                "size": 116730,
+                "image": {
+                  "width": 640,
+                  "height": 640
+                }
+              },
+              "fileName": "pexels-edu-carvalho-2050994.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/70lelzjjvsi5/environments/master/assets/4R8kuXmKQ680Vpgf6UnukR",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/1.14.29; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v16.13.2; os Windows/v16.13.2;",
+            "CF-Sequence": "dd1326e1-7a3d-4af4-b328-6be1bcc83e4a",
+            "Authorization": "Bearer ...cr_L4",
+            "user-agent": "node.js/v16.13.2",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 1,
+            "Content-Length": 416
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"pexels-edu-carvalho-2050994\"},\"description\":{\"en-US\":\"Photo by Edu Carvalho from Pexels\",\"es\":\"Photo by Edu Carvalho from Pexels\"},\"file\":{\"en-US\":{\"contentType\":\"image/jpeg\",\"fileName\":\"pexels-edu-carvalho-2050994.jpg\",\"upload\":\"https://images.ctfassets.net/t888he5mrnzj/4R8kuXmKQ680Vpgf6UnukR/a048b8f53092a73b9df055516734b880/pexels-edu-carvalho-2050994.jpg\"}}}}"
+        },
+        "requestId": "461c1fbc-5271-4e79-af47-59fd758b14c8"
+      }
+    }
+  },
+  {
+    "ts": "2022-08-09T21:07:39.311Z",
+    "level": "error",
+    "error": {
+      "name": "VersionMismatch",
+      "entity": {
+        "metadata": {
+          "tags": [
+          ]
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "t888he5mrnzj"
+            }
+          },
+          "id": "68oYjCP9DoNLbyei4uOJ04",
+          "type": "Asset",
+          "createdAt": "2021-04-22T23:57:08.421Z",
+          "updatedAt": "2021-04-22T23:57:36.914Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 4,
+          "publishedAt": "2021-04-22T23:57:36.914Z",
+          "firstPublishedAt": "2021-04-22T23:57:36.914Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2MxmI2I4mEjRLL0Q94AkvD"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2MxmI2I4mEjRLL0Q94AkvD"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 5,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2MxmI2I4mEjRLL0Q94AkvD"
+            }
+          }
+        },
+        "fields": {
+          "title": {
+            "en-US": "Photo by Michael Giugliano from Pexels"
+          },
+          "description": {
+            "en-US": "https://www.pexels.com/photo/red-petaled-flowers-2928027/"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/t888he5mrnzj/68oYjCP9DoNLbyei4uOJ04/c7092bff6046c586aed25784862bde3c/pexels-michael-giugliano-2928027.jpg",
+              "details": {
+                "size": 387695,
+                "image": {
+                  "width": 1280,
+                  "height": 960
+                }
+              },
+              "fileName": "pexels-michael-giugliano-2928027.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/70lelzjjvsi5/environments/master/assets/68oYjCP9DoNLbyei4uOJ04",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/1.14.29; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v16.13.2; os Windows/v16.13.2;",
+            "CF-Sequence": "dd1326e1-7a3d-4af4-b328-6be1bcc83e4a",
+            "Authorization": "Bearer ...cr_L4",
+            "user-agent": "node.js/v16.13.2",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 1,
+            "Content-Length": 420
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"Photo by Michael Giugliano from Pexels\"},\"description\":{\"en-US\":\"https://www.pexels.com/photo/red-petaled-flowers-2928027/\"},\"file\":{\"en-US\":{\"contentType\":\"image/jpeg\",\"fileName\":\"pexels-michael-giugliano-2928027.jpg\",\"upload\":\"https://images.ctfassets.net/t888he5mrnzj/68oYjCP9DoNLbyei4uOJ04/c7092bff6046c586aed25784862bde3c/pexels-michael-giugliano-2928027.jpg\"}}}}"
+        },
+        "requestId": "06c2daea-dffb-4f02-92ac-c8928d1d62bb"
+      }
+    }
+  }
+]
