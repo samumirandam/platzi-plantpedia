@@ -1,4 +1,4 @@
-import { GetStaticProps, InferGetStaticPropsType, GetStaticPaths } from 'next'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Link from 'next/link'
 
 import { getPlant, getPlantList, getCategoryList } from '@api'
@@ -35,8 +35,7 @@ export const getStaticPaths = async () => {
   return {
     paths,
 
-    // 404 en las entradas no encontradas
-    fallback: false,
+    fallback: 'blocking',
   }
 }
 
@@ -64,6 +63,7 @@ export const getStaticProps: GetStaticProps<PlantEntryProps> = async ({
         otherEntries,
         categories,
       },
+      revalidate: 5 * 60, // refres 5 min
     }
   } catch (error) {
     return {

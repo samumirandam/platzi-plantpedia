@@ -7,8 +7,7 @@ import Document, {
   DocumentContext,
 } from 'next/document'
 
-// Not directly exported by NextJS (next/types). May change across versions.
-import { Enhancer, AppType } from 'next/dist/next-server/lib/utils'
+import { Enhancer, AppType } from 'next/dist/shared/lib/utils'
 
 import { ServerStyleSheets } from '@ui/ssr'
 

@@ -17,7 +17,7 @@ export function AuthorCard({
           {fullName}
         </Typography>
         <Typography variant="body1" color="textSecondary" className="py-4">
-          {biography}
+          {JSON.stringify(biography)}
         </Typography>
         <div className="flex">
           <a

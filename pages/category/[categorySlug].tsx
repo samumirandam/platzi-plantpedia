@@ -1,4 +1,4 @@
-import { GetStaticProps, InferGetStaticPropsType, GetStaticPaths } from 'next'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 import { getCategoryList, getPlantListByCategory } from '@api'
 

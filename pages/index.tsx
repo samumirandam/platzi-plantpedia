@@ -16,6 +16,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     props: {
       plants,
     },
+    revalidate: 5 * 60, // refres 5 min
   }
 }
 
