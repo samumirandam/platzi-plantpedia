@@ -15,7 +15,7 @@ export const Footer = ({ className }: { className?: string }) => {
           <Grid
             item
             xs={12}
-            sm={5}
+            sm={3}
             className="text-center sm:text-left relative"
           >
             <PlantpediaLogo />
@@ -23,7 +23,7 @@ export const Footer = ({ className }: { className?: string }) => {
               Platzi's Plantpedia
             </Typography>
           </Grid>
-          <Grid item xs={6} sm={4}>
+          <Grid item xs={4} sm={3}>
             <Typography variant="h5" className="mb-4">
               Pages
             </Typography>
@@ -39,7 +39,7 @@ export const Footer = ({ className }: { className?: string }) => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={4} sm={3}>
             <Typography variant="h5" className="mb-4">
               About
             </Typography>
@@ -57,6 +57,29 @@ export const Footer = ({ className }: { className?: string }) => {
               </a>
               <a
                 href="https://github.com/jonalvarezz"
+                title="Open this project on GitHub"
+              >
+                GH
+              </a>
+            </div>
+          </Grid>
+          <Grid item xs={4} sm={3}>
+            <Typography variant="h5" className="mb-4">
+              Student
+            </Typography>
+            <p>
+              <a href="https://www.linkedin.com/in/samumirandam/">@samumirandam</a>
+            </p>
+            <div className="mt-3">
+              <a
+                href="https://www.linkedin.com/in/samumirandam/"
+                title="Follow @samumirandam on LinkedIn"
+                className="pr-4"
+              >
+                IN
+              </a>
+              <a
+                href="https://github.com/samumirandam/platzi-plantpedia"
                 title="Open this project on GitHub"
               >
                 GH
