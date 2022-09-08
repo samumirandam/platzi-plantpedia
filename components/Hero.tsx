@@ -13,7 +13,7 @@ export function Hero({ plantName, slug, image, className }: HeroProps) {
         <div className="opacity-60 inline-block">
           <Image
             src={image.url}
-            layout="responsive"
+            layout="intrinsic"
             width={600}
             aspectRatio="9:12"
           />

@@ -18,12 +18,13 @@ export function Image({
   aspectRatio,
   ...nextImageProps
 }: ImageProps) {
-  const heigth = calcAspectRatio(aspectRatio, width)
+  const height = calcAspectRatio(aspectRatio, width)
 
   const imageLoader = useCallback(
     (loaderArgs: ImageLoaderProps) => {
-      const loaderHeigth = calcAspectRatio(aspectRatio, loaderArgs.width)
-      return `${loaderArgs.src}?w=${width}&h=${loaderHeigth}&fit=${fit}`
+      const loaderHeight = calcAspectRatio(aspectRatio, loaderArgs.width)
+
+      return `${loaderArgs.src}?w=${loaderArgs.width}&h=${loaderHeight}&fit=${fit}`
     },
     [aspectRatio, fit]
   )
@@ -32,7 +33,7 @@ export function Image({
     <NextImage
       {...nextImageProps}
       width={width}
-      height={heigth}
+      height={height}
       loader={imageLoader}
     />
   )
@@ -42,8 +43,9 @@ export type ImageFit = 'pad' | 'fill' | 'scale' | 'crop' | 'thumb'
 
 export type AspectRatio = '16:9' | '4:3' | '1:1' | '3:2' | '9:12'
 
-export type ImageLayout = 'fill' | 'fixed' | 'intrisic' | 'responsive'
+export type ImageLayout = 'fill' | 'fixed' | 'intrinsic' | 'responsive'
 
+// https://davidgomes.com/pick-omit-over-union-types-in-typescript/
 type DistributiveOmit<T, K extends keyof T> = T extends unknown
   ? Omit<T, K>
   : never

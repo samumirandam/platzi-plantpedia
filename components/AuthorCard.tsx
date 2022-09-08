@@ -17,7 +17,7 @@ export function AuthorCard({
           width={192}
           aspectRatio="1:1"
           fit="fill"
-          layout="responsive"
+          layout="intrinsic"
         />
       </div>
       <div>

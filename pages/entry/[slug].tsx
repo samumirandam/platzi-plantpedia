@@ -94,7 +94,7 @@ export default function PlanEntryPage({
             <Image
               width={952}
               aspectRatio="4:3"
-              layout="responsive"
+              layout="intrinsic"
               src={plant.image.url}
               alt={plant.image.title}
             />

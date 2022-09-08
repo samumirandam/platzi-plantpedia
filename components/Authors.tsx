@@ -42,7 +42,7 @@ export function Authors({ className }: AuthorProps) {
                 width={150}
                 aspectRatio="1:1"
                 fit="fill"
-                layout="responsive"
+                layout="intrinsic"
               />
               <Typography variant="h5" component="p">
                 {fullName}

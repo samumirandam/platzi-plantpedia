@@ -58,7 +58,7 @@ export function PlantEntrySquare({ image, plantName, slug }: Plant) {
         <div className="opacity-95 hover:opacity-100">
           <Image
             src={image.url}
-            layout="responsive"
+            layout="intrinsic"
             width={460}
             aspectRatio="4:3"
           />
@@ -118,7 +118,7 @@ export function PlantEntryVertical({
           <Image
             src={image.url}
             width={624}
-            layout="responsive"
+            layout="intrinsic"
             aspectRatio="9:12"
           />
           <Typography variant="h2" className="break-words pt-4 px-4">
