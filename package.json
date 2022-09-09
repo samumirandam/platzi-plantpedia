@@ -18,10 +18,22 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
     "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.4",
+    "@mui/styled-engine-sc": "^5.10.3",
+    "@mui/styles": "^5.10.3",
+    "clean-css": "^5.3.1",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@apollo/client": "^3.3.19",
@@ -31,13 +43,11 @@
     "@graphql-codegen/typescript": "^2.7.3",
     "@graphql-codegen/typescript-graphql-request": "^4.5.4",
     "@graphql-codegen/typescript-operations": "^2.5.3",
-    "@material-ui/icons": "^4.11.3",
-    "@material-ui/lab": "^4.0.0-alpha.61",
     "@next/bundle-analyzer": "^12.2.5",
     "@types/lodash": "^4.14.170",
     "@types/node": "^18.7.15",
     "@types/react": "^18.0.18",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.4.8",
     "clsx": "^1.1.1",
     "graphql": "^16.6.0",
     "lodash": "^4.17.21",

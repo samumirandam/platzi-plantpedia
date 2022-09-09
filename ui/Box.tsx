@@ -1,1 +1,1 @@
-export { default as Box } from '@material-ui/core/Box'
+export { default as Box } from '@mui/material/Box'

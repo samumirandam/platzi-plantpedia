@@ -1,2 +1,2 @@
-export { default as Typography } from '@material-ui/core/Typography'
-export type { TypographyProps } from '@material-ui/core/Typography'
+export { default as Typography } from '@mui/material/Typography'
+export type { TypographyProps } from '@mui/material/Typography'

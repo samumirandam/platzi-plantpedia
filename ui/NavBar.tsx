@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { AppBar, Toolbar } from '@material-ui/core'
+import { AppBar, Toolbar } from '@mui/material'
 
 import { Typography } from './Typography'
 

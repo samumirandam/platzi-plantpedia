@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-export { ServerStyleSheets } from '@material-ui/core/styles'
+export { ServerStyleSheets } from '@mui/styles'
 
 // @see: https://material-ui.com/styles/advanced/#next-js
 export function useServerStyles() {

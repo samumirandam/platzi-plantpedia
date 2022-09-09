@@ -1,14 +1,15 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Tabs from '@material-ui/core/Tabs'
-import Tab from '@material-ui/core/Tab'
+import { makeStyles } from '@mui/styles'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`,
+    // borderRight: `1px solid ${theme.palette.divider}`,
+    borderRight: `1px solid rgb(0,0,0,0.12)`,
     flexShrink: 0,
   },
-}))
+})
 
 export type TabItem = {
   label: string

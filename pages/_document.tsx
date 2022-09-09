@@ -20,7 +20,23 @@ class MyDocument extends Document {
   render() {
     return (
       <Html className="text-gray-900 leading-tight">
-        <Head />
+        <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+
+          {/* Google fonts get automatically automized by Next.js: https://nextjs.org/blog/next-10-2#automatic-webfont-optimization */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
+        </Head>{' '}
         <body className="min-h-screen bg-gray-100 overflow-x-hidden">
           <Main />
           <NextScript />

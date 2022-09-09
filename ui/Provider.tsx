@@ -1,4 +1,4 @@
-import { ThemeProvider, StylesProvider } from '@material-ui/core/styles'
+import { ThemeProvider, StylesProvider } from '@mui/styles'
 import { theme } from './theme'
 
 type UIProviderProps = {

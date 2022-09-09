@@ -1,7 +1,7 @@
-import createMuiTheme from '@material-ui/core/styles/createTheme'
-import { grey, common, lightGreen } from '@material-ui/core/colors'
+import createMuiTheme from '@mui/material/styles/createTheme'
+import { grey, common, lightGreen } from '@mui/material/colors'
 
-const muiTheme = createMuiTheme()
+// const muiTheme = createMuiTheme()
 
 // It matches tailwind.config.js
 const fontSerif = `'Cormorant Garamond', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;`
@@ -53,14 +53,14 @@ export const theme = createMuiTheme({
       fontFamily: fontSerif,
     },
   },
-  overrides: {
-    MuiToolbar: {
-      regular: {
-        minHeight: muiTheme.spacing(10),
-        [muiTheme.breakpoints.up('sm')]: {
-          minHeight: muiTheme.spacing(12),
-        },
-      },
-    },
-  },
+  // overrides: {
+  //   MuiToolbar: {
+  //     regular: {
+  //       minHeight: muiTheme.spacing(10),
+  //       [muiTheme.breakpoints.up('sm')]: {
+  //         minHeight: muiTheme.spacing(12),
+  //       },
+  //     },
+  //   },
+  // },
 })
