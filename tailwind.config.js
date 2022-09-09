@@ -1,10 +1,9 @@
 module.exports = {
-  purge: [
+  content: [
     './pages/**/*.{ts,tsx}',
     './ui/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
     fontFamily: {
