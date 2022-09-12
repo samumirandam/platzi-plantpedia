@@ -1,4 +1,4 @@
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -23,16 +23,25 @@ type PathType = {
   params: {
     slug: string
   }
+  locale: string
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
+  if (locales === undefined) {
+    throw new Error('Uh, locales error')
+  }
+
   const entries = await getPlantList({ limit: 10 })
 
-  const paths: PathType[] = entries.map((plant) => ({
-    params: {
-      slug: plant.slug,
-    },
-  }))
+  // const paths: PathType[] = entries.map((plant) => ({
+  //   params: {
+  //     slug: plant.slug,
+  //   },
+  // }))
+
+  const paths: PathType[] = entries
+    .map((plant) => ({ params: { slug: plant.slug } }))
+    .flatMap((path) => locales.map((locale) => ({ locale, ...path })))
 
   return {
     paths,
@@ -43,7 +52,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<PlantEntryProps> = async ({
   params,
-  preview
+  preview,
+  locale,
 }) => {
   const slug = params?.slug
 
@@ -54,7 +64,7 @@ export const getStaticProps: GetStaticProps<PlantEntryProps> = async ({
   }
 
   try {
-    const plant = await getPlant(slug, preview)
+    const plant = await getPlant(slug, preview, locale)
 
     const otherEntries = await getPlantList({ limit: 5 })
 

@@ -9,8 +9,8 @@ import { Authors } from '@components/Authors'
 
 type HomeProps = { plants: Plant[] }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const plants = await getPlantList({ limit: 10 })
+export const getStaticProps: GetStaticProps<HomeProps> = async ({ locale }) => {
+  const plants = await getPlantList({ limit: 10, locale })
 
   return {
     props: {
