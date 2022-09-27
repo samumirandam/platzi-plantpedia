@@ -7,5 +7,7 @@
   "about": "About",
   "aboutDescription": "Platzi's Next.js Course by",
   "imagesFrom": "Images from",
-  "student": "Student"
+  "student": "Student",
+  "signIn": "Sign in",
+  "signOut": "Sign out"
 }

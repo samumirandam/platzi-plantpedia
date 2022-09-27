@@ -7,5 +7,7 @@
   "about": "Acerca",
   "aboutDescription": "Curso de Platzi de Next.js por",
   "imagesFrom": "Imágenes de",
-  "student": "Estudiante"
+  "student": "Estudiante",
+  "signIn": "Ingresar",
+  "signOut": "Salir"
 }
