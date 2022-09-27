@@ -1,6 +1,8 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 import { getPlant, getPlantList, getCategoryList } from '@api'
 
@@ -65,6 +67,7 @@ export const getStaticProps: GetStaticProps<PlantEntryProps> = async ({
 
   try {
     const plant = await getPlant(slug, preview, locale)
+    const i18nConf = await serverSideTranslations(locale!)
 
     const otherEntries = await getPlantList({ limit: 5 })
 
@@ -75,6 +78,7 @@ export const getStaticProps: GetStaticProps<PlantEntryProps> = async ({
         plant,
         otherEntries,
         categories,
+        ...i18nConf,
       },
       revalidate: 5 * 60, // refres 5 min
     }
@@ -90,6 +94,7 @@ export default function PlanEntryPage({
   otherEntries,
   categories,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const { t } = useTranslation(['page-plant-entry'])
   const router = useRouter()
 
   if (router.isFallback) {
@@ -120,7 +125,7 @@ export default function PlanEntryPage({
         <Grid item xs={12} md={4} lg={3} component="aside">
           <section>
             <Typography variant="h5" component="h3" className="mb-4">
-              Recent posts
+              {t('recentPosts')}
             </Typography>
             {otherEntries.map((plantEntry) => (
               <article className="mb-4" key={plantEntry.id}>
@@ -130,7 +135,7 @@ export default function PlanEntryPage({
           </section>
           <section className="mt-10">
             <Typography variant="h5" component="h3" className="mb-4">
-              Categories
+              {t('categories')}
             </Typography>
             <ul className="list">
               {categories?.map((category) => (
