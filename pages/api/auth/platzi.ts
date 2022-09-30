@@ -10,7 +10,7 @@ const credentialsAuth: NextApiHandler = (request, response) => {
     const platziUser: User = {
       name: 'Platzi Student',
       email: 'student@platzi.com',
-      image: '',
+      image: 'platzi.png',
     }
     return response.status(200).json(platziUser)
   }

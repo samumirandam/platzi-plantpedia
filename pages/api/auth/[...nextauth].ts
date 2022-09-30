@@ -7,7 +7,7 @@ const options: NextAuthOptions = {
   theme: {
     colorScheme: 'light',
   },
-  debug: true,
+  debug: process.env.NODE_ENV === 'development',
   session: {},
   jwt: {},
   secret: process.env.AUTH_PLATZI_SECRET,
