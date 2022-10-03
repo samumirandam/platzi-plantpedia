@@ -7,6 +7,7 @@ import { Typography } from '@ui/Typography'
 import { Layout } from '@components/Layout'
 import { Comment, CommentProps } from '@components/Wall/Comment'
 import { Editor } from '@components/Wall/Editor'
+import { AccessDenied } from '@components/AccessDenied'
 
 import { getSession, useSession } from '@auth/client'
 
@@ -32,9 +33,12 @@ type Story = Pick<CommentProps, 'name' | 'imageUrl' | 'text'> & { id: string }
 
 export default function WallPage() {
   const { data: session } = useSession()
-
   const [stories, setStories] = useState<Story[]>([])
   const { t } = useTranslation(['page-wall'])
+
+  if (session === null) {
+    return <AccessDenied />
+  }
 
   const addStory = (text: string) => {
     const message = text.trim()

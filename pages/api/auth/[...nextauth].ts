@@ -8,7 +8,9 @@ const options: NextAuthOptions = {
     colorScheme: 'light',
   },
   debug: process.env.NODE_ENV === 'development',
-  session: {},
+  session: {
+    maxAge: 60 * 15,
+  },
   jwt: {},
   secret: process.env.AUTH_PLATZI_SECRET,
   providers: [
